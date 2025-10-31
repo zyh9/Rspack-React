@@ -1,16 +1,11 @@
 import { defineConfig } from '@rspack/cli';
 import { rspack } from '@rspack/core';
-import * as RefreshPluginModule from '@rspack/plugin-react-refresh';
+import ReactRefreshPlugin from '@rspack/plugin-react-refresh';
 import * as path from 'path';
 import globalConfig from './config';
 import HtmlTagsPlugin from './HtmlTagsPlugin';
 
 const isDev = process.env.NODE_ENV === 'development';
-// https://github.com/rspack-contrib/rspack-plugin-react-refresh/issues/33
-const ReactRefreshRspackPlugin =
-  RefreshPluginModule.ReactRefreshRspackPlugin ||
-  RefreshPluginModule.default ||
-  RefreshPluginModule;
 
 const cdn = {
   // 开发环境
@@ -119,7 +114,7 @@ export default defineConfig({
     ],
   },
   plugins: [
-    isDev && new ReactRefreshRspackPlugin(),
+    isDev && new ReactRefreshPlugin(),
     new rspack.HtmlRspackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.png',
