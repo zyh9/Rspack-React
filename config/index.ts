@@ -1,13 +1,13 @@
 const config = {
   default: {
-    systemTitle: 'BANU',
+    systemTitle: 'rspack',
     primaryColor: '#6a1014',
   },
   dev: {
-    baseURL: 'https://dev.banu.cn',
+    baseURL: 'https://test.xxx.cn',
   },
   prod: {
-    baseURL: 'https://prod.banu.cn',
+    baseURL: 'https://prod.xxx.cn',
   },
 };
 

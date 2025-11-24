@@ -17,10 +17,10 @@ const cdn = {
   prod: {
     css: [],
     js: [
-      '//cdn-scp.banu.cn/npm/react/18.3.1/react.production.min.js',
-      '//cdn-scp.banu.cn/npm/react/18.3.1/react-dom.production.min.js',
-      '//cdn-scp.banu.cn/npm/dayjs/1.11.12/dayjs.min.js',
-      '//cdn-scp.banu.cn/npm/antd/5.20.1/antd.min.js',
+      '//unpkg.com/react@18.2.0/umd/react.production.min.js',
+      '//unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js',
+      '//unpkg.com/dayjs@1.11.18/dayjs.min.js',
+      '//unpkg.com/antd@5.27.6/dist/antd.min.js',
     ],
   },
 };
